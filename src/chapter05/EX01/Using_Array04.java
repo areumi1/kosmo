@@ -50,7 +50,6 @@ public class Using_Array04 {
 		System.out.println("==== for 문 사용해서 값을 입력, 출력 ====");
 		for (int i = 0, j = 100; i <5 ; i++,j+=100) {		// i : index(0,1,2,3,4)
 			a[i] = j;
-			System.out.println(j);
 		}	// a[0] = 100, a[1]=200, a[2]=300, a[3]=400, a[4]500
 		
 		
@@ -66,7 +65,6 @@ public class Using_Array04 {
 		//방의 값을 입력
 		for (int i = 0, j = 1000; i <a.length ; i++,j+=100) {		// i : index(0,1,2,3,4)
 			a[i] = j;
-			System.out.println(j);
 		}	// a[0] = 1000, a[1]=1100, a[2]=1200, a[3]=1300, a[4]1400
 		
 		for(int i = 0; i < a.length; i++) {

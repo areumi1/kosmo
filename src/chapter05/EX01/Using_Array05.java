@@ -18,13 +18,6 @@ public class Using_Array05 {
 		
 		int sum = 0;
 		int count = 0;
-		for (int i = 0; i < a.length; i++) {
-			if (i % 3 == 0) {
-				sum += i;
-				count++;
-			}
-		}
-
 		
 		a[0] = 3;
 		a[1] = 6;
@@ -37,7 +30,9 @@ public class Using_Array05 {
 		for (int i = 0, j=3; i < a.length; i++,j+=3) {
 			a[i] = j;
 			count++;
-			System.out.println(j);
+		}
+		for (int i = 0 ; i <a.length; i++) {
+			System.out.println(a[i]);
 		}
 
 
@@ -51,6 +46,12 @@ public class Using_Array05 {
 		System.out.println("==== Arrays.toString() 를 사용 ====");
 		System.out.println(Arrays.toString(a));
 		
+		for (int i = 0; i < a.length; i++) {
+			if (i % 3 == 0) {
+				sum += i;
+				count++;
+			}
+		}
 
 		System.out.printf("합계 : %d \t 평균 : %f ",sum,sum/(double)count);
 		

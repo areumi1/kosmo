@@ -28,7 +28,7 @@ public class Using_Array08 {
 		int max = arr[0];
 		int min = arr[0];
 		for (int i = 0 ; i < arr.length; i++ ) {
-			if (arr[i]> max) {
+			if (arr[i]> max) {					// arr i 번째 방의 값이 max 변수의 값보다 크면 max 변수에 arr[i] 번 방의 값을 max변수에 대입
 				max = arr[i];
 			}
 		}System.out.println("최대값 : " + max);

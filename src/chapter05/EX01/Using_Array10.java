@@ -17,6 +17,7 @@ public class Using_Array10 {
 		String [] arr;			// 배열선언
 		arr = s.split(" ");		// 공백을 기준으로 잘라서 arr 배열에 저장
 		
+		
 		//arr 배열의 전체를 출력
 		for (int i = 0; i<arr.length; i++) {
 			System.out.println(arr[i]); 	// String
