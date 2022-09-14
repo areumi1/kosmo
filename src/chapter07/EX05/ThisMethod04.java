@@ -2,19 +2,28 @@ package chapter07.EX05;
 
 class Car{
 	
+	// this 키워드 : 필드나 메서드 선언시 사용 불가.
+	//				- 생성자, 메서드 내부에서 필드나 메서드를 사용할때 자신의 객체 필드나 메서드를 지칭
+	//				- 자신의 객체의 필드, 메서드를 가르킨다. 기본적으로 생략해서 많이사용.
+	//				- 반드시 사용해야 할 경우 : 메소드, 생성자에서 입력 매개변수 이름, 필드 이름이 동일할 경우 
+	
+	// this ()	: 생성자 내부에서만 사용, 반드시 첫 라인에 위치
+	//				- 자신의 객체의 다른 생성자를 호출
+	//				- 생성자를 오버라이딩 할 때, 코드를 간략하게 사용
+	
 	String companyName;		//현대자동차
 	String color;			// 검은색
 	double maxSpeed;		//200.0 km/h 
 	
 	//생성자
-	Car(){
-		companyName = "현대자동차";
+	Car(){		// 리턴 타입이 없다, 클래스 이름과 동일
+		companyName = "현대자동차";		//  this 키를 생략시 자동으로 컴파일러가 할당
 		color = "검은색";
 		maxSpeed = 200.0 ;
 	}
 	
-	Car(String companyName){
-		this();
+	Car(String companyName){		//매개변수 이름, 필드이름이 같을때
+		this();						// this () 메소드, 기본생성자 호출
 		this.companyName = companyName;
 	}
 	
@@ -32,7 +41,7 @@ class Car{
 	void print() {
 		System.out.println("자동차 회사 이름 : "+ companyName);
 		System.out.println("자동차 색깔 : "+ color);
-		System.out.println("자동차 최대 속도 : "+ maxSpeed);
+		System.out.println("자동차 최대 속도 : "+ maxSpeed + " km/h");
 	}
 }
 
