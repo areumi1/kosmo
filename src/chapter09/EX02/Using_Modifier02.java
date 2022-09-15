@@ -17,7 +17,7 @@ public class Using_Modifier02  {
 //		System.out.println(a.c);		// 오류 default : 외부클래스 접근 불가 
 //		System.out.println(a.d);		// 오류 private : 외부클래스 접근 불가
 		
-		a.print1();					// public
+//		a.print1();					// public
 //		a.print2();					// protected <접근 불가>, 상속이 적용안되어 있음.
 //		a.print3();					// default <접근 불가>
 //		a.print4();					// private <접근 불가>
